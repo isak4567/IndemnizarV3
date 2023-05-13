@@ -30,27 +30,28 @@
 
             <!-- ========= Logo ========= -->
             <div class="logo">
-                <img src="./multimedia/img/logo.png" alt="">
+                <a href="#"><img src="./multimedia/img/logo.png" alt=""></a>
+                
             </div>
 
             <!-- ========= Navegador ========= -->
             <nav>
                 <ul class="d-flex">
                     <li class="navLi1">
-                        <a href=""><img src="./multimedia/img/GrBladesVertical.png" alt="">Nuestros
+                        <a href="#nuestrosServ"><img src="./multimedia/img/GrBladesVertical.png" alt="">Nuestros
                             servicios</a>
                     </li>
                     <li class="navLi2">
-                        <a href=""><img src="./multimedia/img/GrBriefcase.png" alt="">Procedimiento legal</a>
+                        <a href="#proLegal"><img src="./multimedia/img/GrBriefcase.png" alt="">Procedimiento legal</a>
                     </li>
                     <li class="navLi3">
-                        <a href=""><img src="./multimedia/img/GrUserManager.png" alt="">Quienes somos</a>
+                        <a href="#quienesSom"><img src="./multimedia/img/GrUserManager.png" alt="">Quienes somos</a>
                     </li>
                     <li class="navLi4">
-                        <a href=""><img src="./multimedia/img/GrChat.png" alt="">Ponte en contacto</a>
+                        <a href="./pages/Email.html"><img src="./multimedia/img/GrChat.png" alt="">Ponte en contacto</a>
                     </li>
                     <li class="navLi5">
-                        <a href=""><img src="./multimedia/img/GrCircleQuestion.png" alt="">Preguntas frecuentes</a>
+                        <a href="./pages/PreguntasFrecuentes.html"><img src="./multimedia/img/GrCircleQuestion.png" alt="">Preguntas frecuentes</a>
                     </li>
                 </ul>
             </nav>
@@ -59,7 +60,7 @@
 
         <!-- ========= Video ========= -->
         <div class="video">
-            <img class="botonPlay" src="./multimedia/img/botonPlay.png" alt="">
+            <video autoplay muted class="backgroundHeader" src="./multimedia/videos/videoAbogado.mp4"></video>
         </div>
 
     </header>
@@ -74,7 +75,7 @@
             <!-- ####### Section - ServiciosSect #######-->
             <section class="serviciosSect container">
 
-                <div class="serviciosCont row justify-content-center">
+                <div class="serviciosCont row justify-content-center" id="nuestrosServ">
 
                     <p class="tituloServContPri">Servicios</p>
 
@@ -139,7 +140,7 @@
         <!-- ####### Section - ProLegal #######-->
         <section class="ProLegal">
 
-            <div class="contProLegal">
+            <div class="contProLegal" id="proLegal">
                 <p class="tituloPro">Procedimiento legal</p>
                 <p class="desPro">Luego de la consulta, procederemos de la siguiente manera:</p>
                 <div class="imgPro"></div>
@@ -167,7 +168,7 @@
         </section>
 
         <!-- ####### Section - QuieneSomos #######-->
-        <section class="QuieneSomos container">
+        <section class="QuieneSomos container" id="quienesSom">
             <p class="tituloQuien">¿Quienes somos?</p>
             <p>Contamos con un equipo de abogados altamente especializados en las indemnizaciones.</p>
             <p>Nuestra especialidad en indemnizaciones nos permite ofrecer soluciones efectivas y eficientes en
@@ -177,7 +178,7 @@
                 <img src="./multimedia/img/QuienMP3.png" alt="">
                 <img src="./multimedia/img/QuienMP1.png" alt="">
                 <img src="./multimedia/img/QuienMP2.png" alt="">
-                <a href="">Conoce nuestro equipo</a>
+                <a href="./pages/NuestroEquipo.html">Conoce nuestro equipo</a>
             </div>
         </section>
 
@@ -213,18 +214,17 @@
         <!-- ####### Section - Refencias #######-->
         <section class="Referencias container">
             <p class="tituloRef">Referencias</p>
-            <div class="referencia">
-                <p class="nombreRef">Nombre de sujeto</p>
-                <p class="comRef">Critica a patito cb porque deseguro se le rio en la cara al cliente y ahora estan
-                    siendo demandados.</p>
+
+            <div id="indexCom">
+                <div class="referencia">
+                    <p class="nombreRef">Nombre de sujeto</p>
+                    <p class="comRef">Critica a patito cb porque deseguro se le rio en la cara al cliente y ahora estan
+                        siendo demandados.</p>
+                </div>
             </div>
-            <div class="referencia">
-                <p class="nombreRef">Nombre de sujeto</p>
-                <p class="comRef">Critica a patito cb porque deseguro se le rio en la cara al cliente y ahora estan
-                    siendo demandados.</p>
-            </div>
+            
             <p class="linkRef">
-                <a href="">Ver más</a>
+                <a href="./pages/Comentarios.html">Ver más</a>
             </p>
         </section>
 

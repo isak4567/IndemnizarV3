@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+// Variables
+$Color1: #0A6B76;
+$Color2: #999511;
+$Color3: #FDE8D6;
+$Color4: #FFFFFF;
+$Font1: 'Roboto',
+sans-serif;
+
+// Variables
+$color1: #FFFFFF;
+$color2: #FDE8D6;
+$color3: #0A6B76;
+$color4: #999511;
+$color5: #074951;
+
+// Fonts
+.fontHuge {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.fontMedium {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.fontMediumTitle {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.fontsMall {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+body {
+    font-family: $Font1;
+    background-color: $color5;
+    color: $color1;
+}
+
+// ########## Header ##########
+
+.encabezado {
+    width: 100%;
+    position: absolute;
+    height: 94px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(10, 107, 118, 0) 0%, #0A6B76 100%);
+}
+
+
+
+nav {
+    ul {margin-bottom: 0;}
+    ul li {
+        margin-left: 24px;
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $Color3;
+            img {
+                width: 24px;
+                height: 24px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .navLi1 {width: 66px;}
+    .navLi2 {width: 111px;}
+    .navLi3 {width: 68px;}
+    .navLi4, .navLi5 {width: 88px;}
+}
+
+.video {
+    height: 512px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 183.33px;
+        height: 183.33px;
+        margin-top: 208px;
+    }
+}
+
+// ########## Sect Servicios ##########
+.fondoBlanco {
+    background-color: $Color4;
+}
+
+.frase1 {
+    width: 608px;
+    color: $Color1;
+    padding: 24px 0 40px 0;
+    text-align: center;
+    margin: 0 auto;
+    @extend .fontMediumTitle;
+    span {
+        font-size: 24px;
+        color: $Color2;
+    }
+}
+
+.serviciosSect  {
+    padding-bottom: 80px;
+}
+
+.tituloServContPri {
+    @extend .fontHuge;
+    color: $Color2;
+    width: 880px;
+    margin: 0;
+}
+
+.serviciosCont {
+    gap: 24px;
+    .cuadradroChico {
+        background-color: $Color1;
+        box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
+        border-radius: 16px;
+        height: 438px;
+    }
+}
+
+.cuadradroChico {
+    width: 426px;
+    p {
+        padding-left: 30px;
+        padding-right: 38px;
+        margin-bottom: 24px;
+    }
+    .tituloCC {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $Color3;
+        text-align: center;
+    }
+    .textoCC {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+    .precioCC {
+        padding: 9px 30px;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: #ffffff25;
+        span {
+            font-size: 24px;
+            color: $Color3;
+        }
+    }
+    .precio2CC {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    div {
+        text-align: center;
+        a {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            padding: 9px 32px;
+            border: 3px dashed $Color3;
+            border-radius: 8px;
+            color: $Color3;
+        }
+    }
+    .sacM {
+        margin-bottom: 12px;
+    }
+    .precioCC.m-0 {
+        padding-bottom: 0;
+        line-height: 28px;
+    }
+}
+
+.cuadradroGrande {
+    width: 880px;
+    height: 285px;
+    background: #0A6B76;
+    box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
+    border-radius: 16px;
+    padding: 16px 36px;
+    p:first-child {
+        text-align: center;
+        font-weight: 900;
+        font-size: 20px;
+        color: $Color3;
+        margin-bottom: 20px;
+    }
+    ul {
+        justify-content: space-around;    
+        div li {
+            list-style:disc;
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    } 
+    .contContacto {
+        text-align: center;
+        margin-top: 24px;
+        a {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            padding: 12px 24px;
+            border: 3px dashed $Color3;
+            border-radius: 8px;
+            color: $Color3; 
+        }
+    }
+}
+
+
+
+// ############# Section - Proceso Legal #############
+.ProLegal {
+    background-color: $color1;
+    color: $color3;
+    padding-bottom: 40px;
+    .contProLegal {
+        margin: 0 auto;
+        width: 900px;
+    }
+
+    .tituloPro {
+        @extend .fontHuge;
+        color: $color4;
+        margin-bottom: 24px;
+        padding-top: 40px;
+    }
+
+    .desPro {
+        @extend .fontMedium;
+        margin-bottom: 24px;
+    }
+
+    .imgPro {
+        width: 888px;
+        height: 206px;
+        background-image: url(../multimedia/img/imgProLegal.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.procesoProlegal {
+    display: flex;
+    list-style: decimal;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+
+    li {
+        margin-left: 12px;
+        color: $color4;
+        font-weight: 700;
+
+        span {
+            color: $color3;
+        }
+    }
+}
+
+.pasosProceso {
+    width: 238px;
+    @extend .fontsMall;
+
+    p {
+        margin-top: 10px;
+        text-align: center;
+        border: 3px dashed #0A6B76;
+        border-radius: 16px;
+        padding: 8px 14px;
+
+        span {
+            color: $color4;
+            font-weight: 700;
+        }
+    }
+
+    .esp {
+        margin-bottom: 0;
+        padding: 6px 10px;
+    }
+}
+
+// ############# Section - Quiene Somos #############
+.QuieneSomos {
+    padding: 74px 46px;
+    width: 900px;
+
+    p {
+        @extend .fontMedium;
+        margin-bottom: 24px;
+    }
+
+    .tituloQuien {
+        @extend .fontHuge;
+        color: $color2;
+    }
+
+    img {
+        width: 66px;
+        height: 66px;
+        margin-right: 48px;
+    }
+
+    a {
+        font-weight: 900;
+        font-size: 24px;
+        text-decoration: none;
+        color: $color2;
+        padding: 16px 30px;
+        border: 3px dashed #FDE8D6;
+        border-radius: 8px;
+    }
+}
+
+// ############# Section - Nuestros Valores #############
+.NuestrosValores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+
+    .tituloNV {
+        @extend .fontHuge;
+        color: $color2;
+        text-align: center;
+    }
+
+    .d-flex {
+        justify-content: space-between;
+        gap: 24px;
+        width: 900px;
+    }
+}
+
+.valores {
+    width: 280px;
+
+    p:nth-child(1) {
+        @extend .fontMedium;
+        text-align: center;
+    }
+
+    .contValores {
+        width: 280px;
+        height: 320px;
+        filter: blur(1px);
+        border-radius: 16px;
+    }
+
+    .textoV {
+        position: absolute;
+        margin-top: -176px;
+        width: 280px;
+        padding: 0 18px;
+        @extend .fontsMall;
+
+        span {
+            font-weight: 700;
+            color: $color2;
+        }
+    }
+}
+
+@for $i from 1 through 3 {
+    .contValores#{$i} {
+        background-image: linear-gradient(180deg, rgba(10, 107, 118, 0.25) 25.16%, #0A6B76 82.85%),
+        url('../multimedia/img/valor#{$i}.png');
+    }
+}
+
+
+// ############# Section - Refencias #############
+.tituloRef {
+    @extend .fontHuge;
+    color: $color2;
+    text-align: center;
+}
+
+.referencia {
+    padding: 0 80px 0 140px;
+
+    .nombreRef {
+        @extend .fontMedium;
+    }
+
+    .comRef {
+        @extend .fontsMall;
+    }
+}
+
+.linkRef {
+    margin-top: 48px;
+    text-align: center;
+
+    a {
+        padding: 16px 32px;
+        border: 3px dashed #FDE8D6;
+        border-radius: 8px;
+        text-decoration: none;
+        color: $color2;
+        font-weight: 900;
+        font-size: 24px;
+    }
+}
+
+// ############# Footer #############
+footer {
+    margin-top: 72px;
+}
+
+.barra {
+    width: 90%;
+    height: 2px;
+    margin: auto;
+    background-color: $color4;
+    margin-bottom: 70px;
+}
+
+.linksSociales {
+    div {
+        margin-right: 80px;
+
+        .TipContacto {
+            font-weight: 400;
+            font-size: 26px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin-top: 24px;
+                @extend .fontsMall;
+                color: $color2;
+                display: flex;
+
+                a,
+                p {
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 24px;
+                    text-decoration: underline;
+                    color: #FFFFFF;
+                }
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+}
+
+// ||||############# Pagina - Nuestro Equipo #############|||||
+.TituloNE {
+    @extend .fontHuge;
+    color: $color2;
+    padding-top: 120px;
+    margin: 0 0 40px 11%;
+}
+
+.persEquipo {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    img {
+        width: 540px;
+        height: 360px;
+        filter: drop-shadow(0px 4px 15px #0A6B76);
+        border-radius: 32px;
+        margin-right: 30px;
+    }
+    div {
+        .nombrePE {
+            @extend .fontHuge;
+            color: $color2;
+            margin-bottom: 24px;
+        }
+        .especializacionPE {
+            @extend .fontMedium;
+            margin: 16px 0;
+            line-height: 24px;
+        }
+        .descripcionPE {
+            @extend .fontsMall;
+            line-height: 20px;
+        }
+    }
+}
+
+.vueltaEquipo {
+    flex-direction: row-reverse;
+    img {margin: 0 0 0 30px;}
+}
+
+.especialNE {
+    width: 100%;
+    background-color: $color1;
+    color: $color3;
+    .persEquipo {
+        margin-bottom: 0;
+        padding: 60px 0;
+        .nombrePE { color: $color3;}
+        .descripcionPE {
+            @extend .fontMediumTitle;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+    footer .linksSociales div ul li p, footer .linksSociales div ul li a {
+        color: $color3;
+    }
+}
+
+// ||||############# Pagina - Email #############|||||
+.ContactoForm {
+    padding-top: 122px;
+    margin: 0 0 122px 278px;
+}
+
+.tituloContForm {
+    @extend .fontHuge;
+    color: $color2;
+}
+
+.descContForm {
+    @extend .fontMediumTitle;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 24px 0;
+}
+
+.formGroup {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+    .textBar {
+        width: 543px;
+        background-color: $color1;
+        border-radius: 16px;
+        height: 48px;
+        padding-left: 23px;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 12px;
+        }
+        input {
+            width: 90%;
+            outline: none;
+            border: none;
+        }
+    }
+    label {
+        @extend .fontMediumTitle;
+        font-weight: 700;
+        line-height: 28px;
+        color: $color2;
+    }
+}
+
+.formGroupText {
+    margin-top: 24px;
+    textarea {
+        width: 543px;
+        height: 398px;
+        padding: 16px;
+        border-radius: 16px;
+        margin-right: 16px;
+    }
+    label {
+        @extend .fontMediumTitle;
+        font-weight: 700;
+        color: $color2;
+        margin-bottom: 24px;
+    }
+    ul {
+        padding-left: 12px;
+        width: 316px;
+        @extend .fontMediumTitle;
+        font-weight: 700;
+        margin-bottom: 24px;
+        line-height: 20px;
+        li {
+            margin-left: 24px;
+            @extend .fontsMall;
+        }
+    }
+}
+
+.inpContFormSubmit {
+    margin-left: calc(665px - 276px);
+    margin-top: 24px;
+    background-color: transparent;
+    color: $color2;
+    border: 3px dashed $color2;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+// ||||############# Pagina - Comentarios #############|||||
+.Comentarios {
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+.tituloComForm {
+    @extend .fontMediumTitle;
+}
+
+.textoComentSug {
+    width: 260px;
+    @extend .fontsMall;
+}

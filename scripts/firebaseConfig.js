@@ -4,6 +4,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebas
 // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 // import { getAuth } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
       
@@ -23,3 +24,24 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 export const db = getFirestore(app);
+// Auth
+export const auth = getAuth(app);
+
+/*
+user: pepe@yy.com
+contraseña: 121314
+
+const auth = getAuth();
+signInWithCustomToken(auth, token)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ...
+  });
+
+  */

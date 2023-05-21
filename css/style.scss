@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-ul, a {
+ul,
+a {
     text-decoration: none;
     list-style: none;
 }
@@ -75,9 +76,14 @@ body {
 
 
 nav {
-    ul {margin-bottom: 0;}
+    ul {
+        margin-bottom: 0;
+        display: flex;
+    }
+
     ul li {
         margin-left: 24px;
+
         a {
             font-size: 16px;
             font-weight: 700;
@@ -88,6 +94,7 @@ nav {
             align-items: center;
             text-align: center;
             color: $Color3;
+
             img {
                 width: 24px;
                 height: 24px;
@@ -95,10 +102,23 @@ nav {
             }
         }
     }
-    .navLi1 {width: 66px;}
-    .navLi2 {width: 111px;}
-    .navLi3 {width: 68px;}
-    .navLi4, .navLi5 {width: 88px;}
+
+    .navLi1 {
+        width: 66px;
+    }
+
+    .navLi2 {
+        width: 111px;
+    }
+
+    .navLi3 {
+        width: 68px;
+    }
+
+    .navLi4,
+    .navLi5 {
+        width: 88px;
+    }
 }
 
 .video {
@@ -106,6 +126,7 @@ nav {
     background-color: #d9d9d961;
     display: flex;
     justify-content: center;
+
     video {
         width: 100%;
         height: 512px;
@@ -127,13 +148,14 @@ nav {
     text-align: center;
     margin: 0 auto;
     @extend .fontMediumTitle;
+
     span {
         font-size: 24px;
         color: $Color2;
     }
 }
 
-.serviciosSect  {
+.serviciosSect {
     padding-bottom: 80px;
 }
 
@@ -146,6 +168,7 @@ nav {
 
 .serviciosCont {
     gap: 24px;
+
     .cuadradroChico {
         background-color: $Color1;
         box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
@@ -156,11 +179,13 @@ nav {
 
 .cuadradroChico {
     width: 426px;
+
     p {
         padding-left: 30px;
         padding-right: 38px;
         margin-bottom: 24px;
     }
+
     .tituloCC {
         margin-top: 24px;
         margin-bottom: 16px;
@@ -169,27 +194,33 @@ nav {
         color: $Color3;
         text-align: center;
     }
+
     .textoCC {
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 24px;
     }
+
     .precioCC {
         padding: 9px 30px;
         font-size: 20px;
         font-weight: 500;
         background-color: #ffffff25;
+
         span {
             font-size: 24px;
             color: $Color3;
         }
     }
+
     .precio2CC {
         font-size: 20px;
         font-weight: 500;
     }
+
     div {
         text-align: center;
+
         a {
             text-align: center;
             font-size: 24px;
@@ -200,9 +231,11 @@ nav {
             color: $Color3;
         }
     }
+
     .sacM {
         margin-bottom: 12px;
     }
+
     .precioCC.m-0 {
         padding-bottom: 0;
         line-height: 28px;
@@ -216,25 +249,30 @@ nav {
     box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
     border-radius: 16px;
     padding: 16px 36px;
-    p:first-child {
+
+    h3 {
         text-align: center;
         font-weight: 900;
         font-size: 20px;
         color: $Color3;
         margin-bottom: 20px;
     }
+
     ul {
-        justify-content: space-around;    
+        justify-content: space-around;
+
         div li {
-            list-style:disc;
+            list-style: disc;
             font-weight: 400;
             font-size: 16px;
             margin-bottom: 0;
         }
-    } 
+    }
+
     .contContacto {
         text-align: center;
         margin-top: 24px;
+
         a {
             text-align: center;
             font-size: 20px;
@@ -242,7 +280,7 @@ nav {
             padding: 12px 24px;
             border: 3px dashed $Color3;
             border-radius: 8px;
-            color: $Color3; 
+            color: $Color3;
         }
     }
 }
@@ -254,6 +292,7 @@ nav {
     background-color: $color1;
     color: $color3;
     padding-bottom: 40px;
+
     .contProLegal {
         margin: 0 auto;
         width: 900px;
@@ -412,6 +451,13 @@ nav {
 
 
 // ############# Section - Refencias #############
+.ReferenciasCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .tituloRef {
     @extend .fontHuge;
     color: $color2;
@@ -419,7 +465,12 @@ nav {
 }
 
 .referencia {
-    padding: 0 80px 0 140px;
+    max-width: 740px;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    border: 1px solid #FDE8D6;
+    border-radius: 16px;
 
     .nombreRef {
         @extend .fontMedium;
@@ -507,6 +558,7 @@ footer {
     width: 80%;
     margin: auto;
     margin-bottom: 60px;
+
     img {
         width: 540px;
         height: 360px;
@@ -514,17 +566,20 @@ footer {
         border-radius: 32px;
         margin-right: 30px;
     }
+
     div {
         .nombrePE {
             @extend .fontHuge;
             color: $color2;
             margin-bottom: 24px;
         }
+
         .especializacionPE {
             @extend .fontMedium;
             margin: 16px 0;
             line-height: 24px;
         }
+
         .descripcionPE {
             @extend .fontsMall;
             line-height: 20px;
@@ -534,17 +589,25 @@ footer {
 
 .vueltaEquipo {
     flex-direction: row-reverse;
-    img {margin: 0 0 0 30px;}
+
+    img {
+        margin: 0 0 0 30px;
+    }
 }
 
 .especialNE {
     width: 100%;
     background-color: $color1;
     color: $color3;
+
     .persEquipo {
         margin-bottom: 0;
         padding: 60px 0;
-        .nombrePE { color: $color3;}
+
+        .nombrePE {
+            color: $color3;
+        }
+
         .descripcionPE {
             @extend .fontMediumTitle;
             font-weight: 400;
@@ -552,7 +615,9 @@ footer {
             margin: 24px 0;
         }
     }
-    footer .linksSociales div ul li p, footer .linksSociales div ul li a {
+
+    footer .linksSociales div ul li p,
+    footer .linksSociales div ul li a {
         color: $color3;
     }
 }
@@ -589,15 +654,18 @@ footer {
         margin-right: 16px;
         display: flex;
         align-items: center;
+
         img {
             margin-right: 12px;
         }
+
         input {
             width: 90%;
             outline: none;
             border: none;
         }
     }
+
     label {
         @extend .fontMediumTitle;
         font-weight: 700;
@@ -608,6 +676,7 @@ footer {
 
 .formGroupText {
     margin-top: 24px;
+
     textarea {
         width: 543px;
         height: 398px;
@@ -615,12 +684,14 @@ footer {
         border-radius: 16px;
         margin-right: 16px;
     }
+
     label {
         @extend .fontMediumTitle;
         font-weight: 700;
         color: $color2;
         margin-bottom: 24px;
     }
+
     ul {
         padding-left: 12px;
         width: 316px;
@@ -628,6 +699,7 @@ footer {
         font-weight: 700;
         margin-bottom: 24px;
         line-height: 20px;
+
         li {
             margin-left: 24px;
             @extend .fontsMall;
@@ -658,4 +730,159 @@ footer {
 .textoComentSug {
     width: 260px;
     @extend .fontsMall;
+}
+
+.adminSect {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.461);
+    padding-top: 200px;
+
+    form {
+        padding: 20px;
+        text-align: center;
+        width: 330px;
+        height: 260px;
+        border-radius: 16px;
+        background-color: $Color1;
+        margin: auto;
+
+        .tit {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cerrar {
+            cursor: pointer;
+        }
+
+        .ff {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.disNone {
+    display: none;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 960px) {
+
+    // ########## Header ##########
+
+    .encabezado {
+        height: 48px;
+        background: $Color1;
+        flex-direction: row-reverse;
+    }
+
+    nav ul,
+    .logo {
+        display: none;
+    }
+
+    .video {
+        height: 300px;
+    }
+
+    // ########## Sect Servicios ##########
+    .frase1 {
+        width: 298px;
+        font-size: 12px;
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .tituloServContPri {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .serviciosCont {
+        gap: 16px 0px;
+
+        .cuadradroChico {
+            height: 100%;
+            width: 324px;
+            padding-bottom: 5%;
+
+            p {
+                padding: 0 24px;
+                margin-bottom: 16px;
+            }
+
+            .tituloCC {
+                margin-top: 20px;
+                margin-bottom: 12px;
+                font-size: 16px;
+            }
+
+            .tituloCC.cr2 {
+                line-height: 20px;
+                margin-top: 16px;
+                margin-bottom: 8px;
+                font-size: 16px;
+            }
+
+            .textoCC {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+
+            .precioCC {
+                padding: 4px 24px;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 0px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            .precio2CC {
+                font-size: 16px;
+                background-color: #ffffff25;
+            }
+
+            div a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            .sacM {
+                margin-bottom: 8px;
+            }
+
+            .precioCC.cm {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .cuadradroGrande {
+        height: 100%;
+        width: 324px;
+        padding-bottom: 5%;
+        h3 {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        ul div li {
+            font-size: 12px;
+            min-width: 280px;
+        }
+        .contContacto a {
+            font-size: 16px;
+        }
+    }
+
+    // ############# Section - Proceso Legal #############
+    
 }

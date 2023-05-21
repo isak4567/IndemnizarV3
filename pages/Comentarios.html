@@ -51,8 +51,7 @@
 
     <main>
 
-
-        <section class="Referencias container Comentarios">
+        <section class="ReferenciasCont container Comentarios">
             <p class="tituloRef">Referencias</p>
             <div class="referencia">
                 <p class="nombreRef">Nombre de sujeto</p>
@@ -84,19 +83,19 @@
 
         <div class="barra"></div>
 
-        <form class="ContactoForm" action="">
-            <p class="tituloComForm">Dejanos un comentario sobre tu experiencia con nosotros</p>
+        <form class="ContactoForm p-0" action="">
+            <p class="fontHuge">Dejanos un comentario sobre tu experiencia con nosotros</p>
 
             <div class="formGroup" >
                 <div class="textBar">
                     <img src="../multimedia/img/GrUser2.png" alt="">
-                    <input id="formComNombre" type="text" name="nombre-completo">
+                    <input id="formComNombre" type="text" name="nombre-completo" required>
                 </div>
                 <label for="nombre-completo">Nombre Completo</label>
             </div>
 
             <div class="formGroupText d-flex">
-                <textarea id="formComDesc" name="caso" id="caso"></textarea>
+                <textarea id="formComDesc" name="caso" id="caso" required></textarea>
                 <div>
                     <p class="textoComentSug">Valoramos seriamente cualquier critica que puedas tener en base a nuestros servicios.</p>
                 </div>
@@ -105,6 +104,31 @@
 
             <input class="inpContFormSubmit" type="submit" value="Enviar Mensaje">
         </form>
+
+        <div class="adminSect disNone">
+
+            <form action="">
+
+                <div class="tit" >
+                    <p>Admin</p>
+                    <p class="cerrar">x</p>
+                </div>
+    
+                <div class="ff">
+                    <label for="adminEmail">Email</label>
+                    <input type="text" name="adminEmail" id="adminEmail">
+                </div>
+                <div class="ff">
+                    <label for="adminCont">Contraseña</label>
+                    <input type="text" name="adminCont" id="adminCont">
+                </div>
+    
+                <input type="submit" name="Entrar" id="">
+    
+            </form>
+
+        </div>
+
 
     </main>
 
@@ -197,9 +221,11 @@
     </footer>
 
     <!-- ####### Script #######-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="../scripts/firebaseConfig.js"></script>
     <script type="module" src="../scripts/Comentarios.js"></script>
-    
+    <script type="module" src="../scripts/admin.js"></script>
+
 </body>
 
 </html>

@@ -2,32 +2,32 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-ul, a {
+ul,
+a {
   text-decoration: none;
   list-style: none;
 }
 
-.fontHuge, .tituloServContPri, .ProLegal .tituloPro, .QuieneSomos .tituloQuien, .NuestrosValores .tituloNV, .tituloRef, .TituloNE, .persEquipo div .nombrePE, .tituloContForm {
+.fontHuge, .tituloContForm, .persEquipo div .nombrePE, .TituloNE, .tituloRef, .NuestrosValores .tituloNV, .QuieneSomos .tituloQuien, .ProLegal .tituloPro, .tituloServContPri {
   font-weight: 900;
   font-size: 32px;
   line-height: 32px;
 }
 
-.fontMedium, .ProLegal .desPro, .QuieneSomos p, .valores p:nth-child(1), .referencia .nombreRef, .persEquipo div .especializacionPE {
+.fontMedium, .persEquipo div .especializacionPE, .referencia .nombreRef, .valores p:nth-child(1), .QuieneSomos p, .ProLegal .desPro {
   font-weight: 500;
   font-size: 24px;
 }
 
-.fontMediumTitle, .frase1, .especialNE .persEquipo .descripcionPE, .descContForm, .formGroup label, .formGroupText label, .formGroupText ul, .tituloComForm {
+.fontMediumTitle, .tituloComForm, .formGroupText ul, .formGroupText label, .formGroup label, .descContForm, .especialNE .persEquipo .descripcionPE, .frase1 {
   font-weight: 900;
   font-size: 20px;
 }
 
-.fontsMall, .pasosProceso, .valores .textoV, .referencia .comRef, .linksSociales div ul li, .persEquipo div .descripcionPE, .formGroupText ul li, .textoComentSug {
+.fontsMall, .textoComentSug, .formGroupText ul li, .persEquipo div .descripcionPE, .linksSociales div ul li, .referencia .comRef, .valores .textoV, .pasosProceso {
   font-weight: 400;
   font-size: 16px;
 }
@@ -47,81 +47,55 @@ body {
   position: absolute;
   height: 94px;
   padding: 0 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 107, 118, 0)), to(#0A6B76));
+  justify-content: space-between;
+  align-items: center;
   background: linear-gradient(0deg, rgba(10, 107, 118, 0) 0%, #0A6B76 100%);
 }
 
 nav ul {
   margin-bottom: 0;
+  display: flex;
 }
-
 nav ul li {
   margin-left: 24px;
 }
-
 nav ul li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #FDE8D6;
 }
-
 nav ul li a img {
   width: 24px;
   height: 24px;
   margin-bottom: 4px;
 }
-
 nav .navLi1 {
   width: 66px;
 }
-
 nav .navLi2 {
   width: 111px;
 }
-
 nav .navLi3 {
   width: 68px;
 }
-
-nav .navLi4, nav .navLi5 {
+nav .navLi4,
+nav .navLi5 {
   width: 88px;
 }
 
 .video {
   height: 512px;
-  background-color: #d9d9d961;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgba(217, 217, 217, 0.3803921569);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .video video {
   width: 100%;
   height: 512px;
@@ -142,7 +116,6 @@ nav .navLi4, nav .navLi5 {
   text-align: center;
   margin: 0 auto;
 }
-
 .frase1 span {
   font-size: 24px;
   color: #999511;
@@ -161,11 +134,9 @@ nav .navLi4, nav .navLi5 {
 .serviciosCont {
   gap: 24px;
 }
-
 .serviciosCont .cuadradroChico {
   background-color: #0A6B76;
-  -webkit-box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
-          box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
+  box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
   border-radius: 16px;
   height: 438px;
 }
@@ -173,13 +144,11 @@ nav .navLi4, nav .navLi5 {
 .cuadradroChico {
   width: 426px;
 }
-
 .cuadradroChico p {
   padding-left: 30px;
   padding-right: 38px;
   margin-bottom: 24px;
 }
-
 .cuadradroChico .tituloCC {
   margin-top: 24px;
   margin-bottom: 16px;
@@ -188,34 +157,28 @@ nav .navLi4, nav .navLi5 {
   color: #FDE8D6;
   text-align: center;
 }
-
 .cuadradroChico .textoCC {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 24px;
 }
-
 .cuadradroChico .precioCC {
   padding: 9px 30px;
   font-size: 20px;
   font-weight: 500;
-  background-color: #ffffff25;
+  background-color: rgba(255, 255, 255, 0.1450980392);
 }
-
 .cuadradroChico .precioCC span {
   font-size: 24px;
   color: #FDE8D6;
 }
-
 .cuadradroChico .precio2CC {
   font-size: 20px;
   font-weight: 500;
 }
-
 .cuadradroChico div {
   text-align: center;
 }
-
 .cuadradroChico div a {
   text-align: center;
   font-size: 24px;
@@ -225,11 +188,9 @@ nav .navLi4, nav .navLi5 {
   border-radius: 8px;
   color: #FDE8D6;
 }
-
 .cuadradroChico .sacM {
   margin-bottom: 12px;
 }
-
 .cuadradroChico .precioCC.m-0 {
   padding-bottom: 0;
   line-height: 28px;
@@ -239,37 +200,30 @@ nav .navLi4, nav .navLi5 {
   width: 880px;
   height: 285px;
   background: #0A6B76;
-  -webkit-box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
-          box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
+  box-shadow: 0px 4px 10px rgba(9, 168, 186, 0.3);
   border-radius: 16px;
   padding: 16px 36px;
 }
-
-.cuadradroGrande p:first-child {
+.cuadradroGrande h3 {
   text-align: center;
   font-weight: 900;
   font-size: 20px;
   color: #FDE8D6;
   margin-bottom: 20px;
 }
-
 .cuadradroGrande ul {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .cuadradroGrande ul div li {
   list-style: disc;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 0;
 }
-
 .cuadradroGrande .contContacto {
   text-align: center;
   margin-top: 24px;
 }
-
 .cuadradroGrande .contContacto a {
   text-align: center;
   font-size: 20px;
@@ -285,22 +239,18 @@ nav .navLi4, nav .navLi5 {
   color: #0A6B76;
   padding-bottom: 40px;
 }
-
 .ProLegal .contProLegal {
   margin: 0 auto;
   width: 900px;
 }
-
 .ProLegal .tituloPro {
   color: #999511;
   margin-bottom: 24px;
   padding-top: 40px;
 }
-
 .ProLegal .desPro {
   margin-bottom: 24px;
 }
-
 .ProLegal .imgPro {
   width: 888px;
   height: 206px;
@@ -311,23 +261,17 @@ nav .navLi4, nav .navLi5 {
 }
 
 .procesoProlegal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: decimal;
   width: 100%;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .procesoProlegal li {
   margin-left: 12px;
   color: #999511;
   font-weight: 700;
 }
-
 .procesoProlegal li span {
   color: #0A6B76;
 }
@@ -335,7 +279,6 @@ nav .navLi4, nav .navLi5 {
 .pasosProceso {
   width: 238px;
 }
-
 .pasosProceso p {
   margin-top: 10px;
   text-align: center;
@@ -343,12 +286,10 @@ nav .navLi4, nav .navLi5 {
   border-radius: 16px;
   padding: 8px 14px;
 }
-
 .pasosProceso p span {
   color: #999511;
   font-weight: 700;
 }
-
 .pasosProceso .esp {
   margin-bottom: 0;
   padding: 6px 10px;
@@ -358,21 +299,17 @@ nav .navLi4, nav .navLi5 {
   padding: 74px 46px;
   width: 900px;
 }
-
 .QuieneSomos p {
   margin-bottom: 24px;
 }
-
 .QuieneSomos .tituloQuien {
   color: #FDE8D6;
 }
-
 .QuieneSomos img {
   width: 66px;
   height: 66px;
   margin-right: 48px;
 }
-
 .QuieneSomos a {
   font-weight: 900;
   font-size: 24px;
@@ -384,28 +321,17 @@ nav .navLi4, nav .navLi5 {
 }
 
 .NuestrosValores {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 40px;
 }
-
 .NuestrosValores .tituloNV {
   color: #FDE8D6;
   text-align: center;
 }
-
 .NuestrosValores .d-flex {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 24px;
   width: 900px;
 }
@@ -413,44 +339,43 @@ nav .navLi4, nav .navLi5 {
 .valores {
   width: 280px;
 }
-
 .valores p:nth-child(1) {
   text-align: center;
 }
-
 .valores .contValores {
   width: 280px;
   height: 320px;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  filter: blur(1px);
   border-radius: 16px;
 }
-
 .valores .textoV {
   position: absolute;
   margin-top: -176px;
   width: 280px;
   padding: 0 18px;
 }
-
 .valores .textoV span {
   font-weight: 700;
   color: #FDE8D6;
 }
 
 .contValores1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25.16%, rgba(10, 107, 118, 0.25)), color-stop(82.85%, #0A6B76)), url("../multimedia/img/valor1.png");
   background-image: linear-gradient(180deg, rgba(10, 107, 118, 0.25) 25.16%, #0A6B76 82.85%), url("../multimedia/img/valor1.png");
 }
 
 .contValores2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25.16%, rgba(10, 107, 118, 0.25)), color-stop(82.85%, #0A6B76)), url("../multimedia/img/valor2.png");
   background-image: linear-gradient(180deg, rgba(10, 107, 118, 0.25) 25.16%, #0A6B76 82.85%), url("../multimedia/img/valor2.png");
 }
 
 .contValores3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25.16%, rgba(10, 107, 118, 0.25)), color-stop(82.85%, #0A6B76)), url("../multimedia/img/valor3.png");
   background-image: linear-gradient(180deg, rgba(10, 107, 118, 0.25) 25.16%, #0A6B76 82.85%), url("../multimedia/img/valor3.png");
+}
+
+.ReferenciasCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tituloRef {
@@ -459,14 +384,17 @@ nav .navLi4, nav .navLi5 {
 }
 
 .referencia {
-  padding: 0 80px 0 140px;
+  max-width: 740px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border: 1px solid #FDE8D6;
+  border-radius: 16px;
 }
-
 .linkRef {
   margin-top: 48px;
   text-align: center;
 }
-
 .linkRef a {
   padding: 16px 32px;
   border: 3px dashed #FDE8D6;
@@ -492,25 +420,19 @@ footer {
 .linksSociales div {
   margin-right: 80px;
 }
-
 .linksSociales div .TipContacto {
   font-weight: 400;
   font-size: 26px;
 }
-
 .linksSociales div ul {
   padding: 0;
   list-style: none;
 }
-
 .linksSociales div ul li {
   margin-top: 24px;
   color: #FDE8D6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .linksSociales div ul li a,
 .linksSociales div ul li p {
   padding: 0;
@@ -519,7 +441,6 @@ footer {
   text-decoration: underline;
   color: #FFFFFF;
 }
-
 .linksSociales div ul li img {
   height: 24px;
   width: 24px;
@@ -536,37 +457,28 @@ footer {
   margin: auto;
   margin-bottom: 60px;
 }
-
 .persEquipo img {
   width: 540px;
   height: 360px;
-  -webkit-filter: drop-shadow(0px 4px 15px #0A6B76);
-          filter: drop-shadow(0px 4px 15px #0A6B76);
+  filter: drop-shadow(0px 4px 15px #0A6B76);
   border-radius: 32px;
   margin-right: 30px;
 }
-
 .persEquipo div .nombrePE {
   color: #FDE8D6;
   margin-bottom: 24px;
 }
-
 .persEquipo div .especializacionPE {
   margin: 16px 0;
   line-height: 24px;
 }
-
 .persEquipo div .descripcionPE {
   line-height: 20px;
 }
 
 .vueltaEquipo {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .vueltaEquipo img {
   margin: 0 0 0 30px;
 }
@@ -576,23 +488,20 @@ footer {
   background-color: #FFFFFF;
   color: #0A6B76;
 }
-
 .especialNE .persEquipo {
   margin-bottom: 0;
   padding: 60px 0;
 }
-
 .especialNE .persEquipo .nombrePE {
   color: #0A6B76;
 }
-
 .especialNE .persEquipo .descripcionPE {
   font-weight: 400;
   line-height: 24px;
   margin: 24px 0;
 }
-
-.especialNE footer .linksSociales div ul li p, .especialNE footer .linksSociales div ul li a {
+.especialNE footer .linksSociales div ul li p,
+.especialNE footer .linksSociales div ul li a {
   color: #0A6B76;
 }
 
@@ -613,14 +522,9 @@ footer {
 
 .formGroup {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .formGroup .textBar {
   width: 543px;
   background-color: #FFFFFF;
@@ -628,24 +532,17 @@ footer {
   height: 48px;
   padding-left: 23px;
   margin-right: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .formGroup .textBar img {
   margin-right: 12px;
 }
-
 .formGroup .textBar input {
   width: 90%;
   outline: none;
   border: none;
 }
-
 .formGroup label {
   font-weight: 700;
   line-height: 28px;
@@ -655,7 +552,6 @@ footer {
 .formGroupText {
   margin-top: 24px;
 }
-
 .formGroupText textarea {
   width: 543px;
   height: 398px;
@@ -663,13 +559,11 @@ footer {
   border-radius: 16px;
   margin-right: 16px;
 }
-
 .formGroupText label {
   font-weight: 700;
   color: #FDE8D6;
   margin-bottom: 24px;
 }
-
 .formGroupText ul {
   padding-left: 12px;
   width: 316px;
@@ -677,13 +571,12 @@ footer {
   margin-bottom: 24px;
   line-height: 20px;
 }
-
 .formGroupText ul li {
   margin-left: 24px;
 }
 
 .inpContFormSubmit {
-  margin-left: calc(665px - 276px);
+  margin-left: 389px;
   margin-top: 24px;
   background-color: transparent;
   color: #FDE8D6;
@@ -700,4 +593,130 @@ footer {
 .textoComentSug {
   width: 260px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.adminSect {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.461);
+  padding-top: 200px;
+}
+.adminSect form {
+  padding: 20px;
+  text-align: center;
+  width: 330px;
+  height: 260px;
+  border-radius: 16px;
+  background-color: #0A6B76;
+  margin: auto;
+}
+.adminSect form .tit {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.adminSect form .cerrar {
+  cursor: pointer;
+}
+.adminSect form .ff {
+  display: flex;
+  flex-direction: column;
+}
+
+.disNone {
+  display: none;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 960px) {
+  .encabezado {
+    height: 48px;
+    background: #0A6B76;
+    flex-direction: row-reverse;
+  }
+  nav ul,
+  .logo {
+    display: none;
+  }
+  .video {
+    height: 300px;
+  }
+  .frase1 {
+    width: 298px;
+    font-size: 12px;
+  }
+  .frase1 span {
+    font-size: 16px;
+  }
+  .tituloServContPri {
+    width: 90%;
+    font-size: 20px;
+  }
+  .serviciosCont {
+    gap: 16px 0px;
+  }
+  .serviciosCont .cuadradroChico {
+    height: 100%;
+    width: 324px;
+    padding-bottom: 5%;
+  }
+  .serviciosCont .cuadradroChico p {
+    padding: 0 24px;
+    margin-bottom: 16px;
+  }
+  .serviciosCont .cuadradroChico .tituloCC {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .serviciosCont .cuadradroChico .tituloCC.cr2 {
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .serviciosCont .cuadradroChico .textoCC {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .serviciosCont .cuadradroChico .precioCC {
+    padding: 4px 24px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+  .serviciosCont .cuadradroChico .precioCC span {
+    font-size: 20px;
+  }
+  .serviciosCont .cuadradroChico .precio2CC {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1450980392);
+  }
+  .serviciosCont .cuadradroChico div a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .serviciosCont .cuadradroChico .sacM {
+    margin-bottom: 8px;
+  }
+  .serviciosCont .cuadradroChico .precioCC.cm {
+    margin-bottom: 16px;
+  }
+  .cuadradroGrande {
+    height: 100%;
+    width: 324px;
+    padding-bottom: 5%;
+  }
+  .cuadradroGrande h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .cuadradroGrande ul div li {
+    font-size: 12px;
+    min-width: 280px;
+  }
+  .cuadradroGrande .contContacto a {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@ a {
   line-height: 32px;
 }
 
-.fontMedium, .persEquipo div .especializacionPE, .referencia .nombreRef, .valores p:nth-child(1), .QuieneSomos p, .ProLegal .desPro {
+.fontMedium, .persEquipo div .especializacionPE, .referencia .nombreRef, .valores h3, .QuieneSomos p, .ProLegal .desPro {
   font-weight: 500;
   font-size: 24px;
 }
@@ -339,7 +339,7 @@ nav .navLi5 {
 .valores {
   width: 280px;
 }
-.valores p:nth-child(1) {
+.valores h3 {
   text-align: center;
 }
 .valores .contValores {
@@ -347,6 +347,8 @@ nav .navLi5 {
   height: 320px;
   filter: blur(1px);
   border-radius: 16px;
+  background-position: center;
+  background-size: cover;
 }
 .valores .textoV {
   position: absolute;
@@ -642,9 +644,13 @@ footer {
   .video {
     height: 300px;
   }
+  .serviciosSect {
+    padding-bottom: 0px;
+  }
   .frase1 {
     width: 298px;
     font-size: 12px;
+    padding: 24px 0 20px 0;
   }
   .frase1 span {
     font-size: 16px;
@@ -718,5 +724,133 @@ footer {
   }
   .cuadradroGrande .contContacto a {
     font-size: 16px;
+  }
+  .ProLegal .contProLegal {
+    width: 324px;
+  }
+  .ProLegal .tituloPro {
+    font-size: 20px;
+    margin-bottom: 16px;
+    padding-top: 24px;
+  }
+  .ProLegal .desPro {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .ProLegal .imgPro {
+    background-image: url(../multimedia/img/proLegalCell.png);
+    min-width: 74px;
+    height: 388px;
+  }
+  .contPasosProlegal {
+    display: flex;
+  }
+  .procesoProlegal {
+    flex-direction: column;
+  }
+  .procesoProlegal li {
+    margin-left: 14px;
+  }
+  .pasosProceso {
+    margin-bottom: 9px;
+    font-size: 12px;
+  }
+  .pasosProceso p {
+    margin: 6px 0 0 0;
+    padding: 8px;
+  }
+  .QuieneSomos {
+    width: 312px;
+    padding: 24px;
+  }
+  .QuieneSomos p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .QuieneSomos .tituloQuien {
+    font-size: 20px;
+  }
+  .QuieneSomos img {
+    width: 66px;
+    height: 66px;
+    margin-right: 19.2px;
+    margin-bottom: 12px;
+  }
+  .QuieneSomos .d-flex {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .QuieneSomos .d-flex a {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+  .NuestrosValores {
+    padding-bottom: 40px;
+  }
+  .NuestrosValores .tituloNV {
+    font-size: 20px;
+  }
+  .NuestrosValores .d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 324px;
+  }
+  .valores {
+    width: 260px;
+  }
+  .valores h3 {
+    font-size: 16px;
+  }
+  .valores .contValores {
+    width: 260px;
+    height: 260px;
+  }
+  .valores .textoV {
+    width: 260px;
+    font-size: 12px;
+    margin-top: -120px;
+  }
+  .tituloRef {
+    font-size: 20px;
+  }
+  .referencia {
+    margin-bottom: 8px;
+    padding: 8px 16px;
+  }
+  .referencia p {
+    margin-bottom: 8px;
+  }
+  .referencia .nombreRef {
+    font-size: 16px;
+  }
+  .referencia .comRef {
+    font-size: 12px;
+  }
+  .linkRef {
+    margin-top: 24px;
+  }
+  .linkRef a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  footer {
+    margin-top: 32px;
+  }
+  .barra {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .linksSociales {
+    flex-direction: column;
+  }
+  .linksSociales div .TipContacto {
+    font-size: 20px;
+  }
+  .linksSociales div ul li {
+    font-size: 16px;
+    margin-top: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

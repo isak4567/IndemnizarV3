@@ -415,8 +415,7 @@ nav {
 
 .valores {
     width: 280px;
-
-    p:nth-child(1) {
+    h3 {
         @extend .fontMedium;
         text-align: center;
     }
@@ -426,6 +425,8 @@ nav {
         height: 320px;
         filter: blur(1px);
         border-radius: 16px;
+        background-position: center;
+        background-size: cover;
     }
 
     .textoV {
@@ -791,9 +792,15 @@ footer {
     }
 
     // ########## Sect Servicios ##########
+    .serviciosSect {
+        padding-bottom: 0px;
+    }
+
     .frase1 {
         width: 298px;
         font-size: 12px;
+        padding: 24px 0 20px 0;
+
         span {
             font-size: 16px;
         }
@@ -870,19 +877,174 @@ footer {
         height: 100%;
         width: 324px;
         padding-bottom: 5%;
+
         h3 {
             font-size: 16px;
             margin-bottom: 16px;
         }
+
         ul div li {
             font-size: 12px;
             min-width: 280px;
         }
+
         .contContacto a {
             font-size: 16px;
         }
     }
 
     // ############# Section - Proceso Legal #############
-    
+    .ProLegal {
+        .contProLegal {
+            width: 324px;
+        }
+
+        .tituloPro {
+            font-size: 20px;
+            margin-bottom: 16px;
+            padding-top: 24px;
+        }
+
+        .desPro {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .imgPro {
+            background-image: url(../multimedia/img/proLegalCell.png);
+            min-width: 74px;
+            height: 388px;
+        }
+    }
+
+    .contPasosProlegal {
+        display: flex;
+    }
+
+    .procesoProlegal {
+        flex-direction: column;
+
+        li {
+            margin-left: 14px;
+        }
+    }
+
+    .pasosProceso {
+        margin-bottom: 9px;
+        font-size: 12px;
+
+        p {
+            margin: 6px 0 0 0;
+            padding: 8px;
+        }
+    }
+
+    // ############# Section - Quiene Somos #############
+    .QuieneSomos {
+        width: 312px;
+        padding: 24px;
+
+        p {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .tituloQuien {
+            font-size: 20px;
+        }
+
+        img {
+            width: 66px;
+            height: 66px;
+            margin-right: 19.2px;
+            margin-bottom: 12px;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            a {
+                font-size: 20px;
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    // ############# Section - Nuestros Valores #############
+    .NuestrosValores {
+        padding-bottom: 40px;
+
+        .tituloNV {
+            font-size: 20px;
+        }
+        .d-flex {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            width: 324px;
+        }
+    }
+
+    .valores {
+        width: 260px;
+        h3 {
+            font-size: 16px;
+        }
+        .contValores  {
+            width: 260px;
+            height: 260px;
+        }
+        .textoV  {
+            width: 260px;
+            font-size: 12px;
+            margin-top: -120px;
+        }
+    }
+
+    // ############# Section - Refencias #############
+    .tituloRef {
+        font-size: 20px;
+    }
+
+    .referencia {
+        margin-bottom: 8px;
+        padding: 8px 16px;
+        p {margin-bottom: 8px;}
+        .nombreRef {
+            font-size: 16px;
+        }
+        .comRef {
+            font-size: 12px;
+        }
+    }
+    .linkRef {
+        margin-top: 24px;
+        a {
+            font-size: 16px;
+            padding: 8px 16px;
+        }
+    }
+
+    // ############# Footer #############
+    footer {
+        margin-top: 32px;
+    }
+
+    .barra {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .linksSociales {
+        flex-direction: column;
+        div .TipContacto {
+            font-size: 20px;
+        }
+        div ul li {
+            font-size: 16px;
+            margin-top: 12px;
+        }
+    }
 }

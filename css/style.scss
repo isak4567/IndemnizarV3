@@ -73,9 +73,11 @@ body {
     background: linear-gradient(0deg, rgba(10, 107, 118, 0) 0%, #0A6B76 100%);
 }
 
+.logo2 {display: none;}
 
 
 nav {
+    .hamMenu {display: none;}
     ul {
         margin-bottom: 0;
         display: flex;
@@ -772,10 +774,9 @@ footer {
     display: none;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 960px) {
+@media only screen and (min-width: 300px) and (max-width: 960px) {
 
     // ########## Header ##########
-
     .encabezado {
         height: 48px;
         background: $Color1;
@@ -785,6 +786,27 @@ footer {
     nav ul,
     .logo {
         display: none;
+    }
+
+    .logo2, nav .hamMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .disflex {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: $Color1;
+        padding: 8% 2% 4% 2%;
+        li {margin-left: 8px;}
+        a {
+            flex-direction: row;
+            margin-bottom: 8px;
+            img {margin-right: 8px;}
+        }
+        .navLi1, .navLi2, .navLi3, .navLi4,
+        .navLi5 {width: fit-content;}
     }
 
     .video {
@@ -945,7 +967,7 @@ footer {
         padding: 24px;
 
         p {
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 12px;
         }
 
@@ -1008,7 +1030,6 @@ footer {
     .tituloRef {
         font-size: 20px;
     }
-
     .referencia {
         margin-bottom: 8px;
         padding: 8px 16px;
@@ -1038,6 +1059,7 @@ footer {
         margin-bottom: 30px;
     }
     .linksSociales {
+        padding-left: 40px;
         flex-direction: column;
         div .TipContacto {
             font-size: 20px;

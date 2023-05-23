@@ -53,6 +53,13 @@ body {
   background: linear-gradient(0deg, rgba(10, 107, 118, 0) 0%, #0A6B76 100%);
 }
 
+.logo2 {
+  display: none;
+}
+
+nav .hamMenu {
+  display: none;
+}
 nav ul {
   margin-bottom: 0;
   display: flex;
@@ -631,7 +638,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 960px) {
+@media only screen and (min-width: 300px) and (max-width: 960px) {
   .encabezado {
     height: 48px;
     background: #0A6B76;
@@ -640,6 +647,32 @@ footer {
   nav ul,
   .logo {
     display: none;
+  }
+  .logo2, nav .hamMenu {
+    display: block;
+    cursor: pointer;
+  }
+  .disflex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #0A6B76;
+    padding: 8% 2% 4% 2%;
+  }
+  .disflex li {
+    margin-left: 8px;
+  }
+  .disflex a {
+    flex-direction: row;
+    margin-bottom: 8px;
+  }
+  .disflex a img {
+    margin-right: 8px;
+  }
+  .disflex .navLi1, .disflex .navLi2, .disflex .navLi3, .disflex .navLi4,
+  .disflex .navLi5 {
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .video {
     height: 300px;
@@ -764,7 +797,7 @@ footer {
     padding: 24px;
   }
   .QuieneSomos p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 12px;
   }
   .QuieneSomos .tituloQuien {
@@ -844,6 +877,7 @@ footer {
     margin-bottom: 30px;
   }
   .linksSociales {
+    padding-left: 40px;
     flex-direction: column;
   }
   .linksSociales div .TipContacto {

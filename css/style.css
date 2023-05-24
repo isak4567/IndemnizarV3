@@ -518,6 +518,9 @@ footer {
   padding-top: 122px;
   margin: 0 0 122px 278px;
 }
+.ContactoForm ul {
+  list-style: initial;
+}
 
 .tituloContForm {
   color: #FDE8D6;
@@ -594,8 +597,12 @@ footer {
   padding: 8px 16px;
 }
 
+.ReferenciasCont {
+  padding-top: 120px;
+}
+
 .Comentarios {
-  padding-top: 140px;
+  padding-top: 20px;
   padding-bottom: 60px;
 }
 
@@ -656,6 +663,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 2;
     background-color: #0A6B76;
     padding: 8% 2% 4% 2%;
   }
@@ -886,5 +894,114 @@ footer {
   .linksSociales div ul li {
     font-size: 16px;
     margin-top: 12px;
+  }
+  .TituloNE {
+    font-size: 20px;
+    padding-top: 80px;
+    margin: 0 0 24px 8%;
+  }
+  .persEquipo {
+    flex-direction: column;
+    width: 88%;
+    margin-bottom: 24px;
+  }
+  .persEquipo img {
+    width: 311px;
+    height: 220px;
+    margin: 0;
+  }
+  .persEquipo div .nombrePE {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .persEquipo div .especializacionPE {
+    font-size: 16px;
+    margin: 12px 0;
+    line-height: 24px;
+  }
+  .persEquipo div .descripcionPE {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .especialNE .persEquipo {
+    padding: 24px 0;
+  }
+  .especialNE .persEquipo .nombrePE {
+    margin-top: 18px;
+  }
+  .especialNE .persEquipo .descripcionPE {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+  .ContactoForm {
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 312px;
+  }
+  .tituloContForm {
+    font-size: 20px;
+  }
+  .descContForm {
+    font-size: 16px;
+    margin: 16px 0 24px 0;
+    line-height: 24px;
+  }
+  .formGroup {
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+  .formGroup label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .formGroup .textBar {
+    width: 100%;
+  }
+  .formGroupText {
+    flex-direction: column-reverse;
+  }
+  .formGroupText label {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .formGroupText textarea {
+    width: 100%;
+    height: 200px;
+  }
+  .formGroupText div div {
+    display: flex;
+  }
+  .formGroupText div div ul {
+    font-size: 16px;
+  }
+  .formGroupText div div ul li {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .inpContFormSubmit {
+    margin: 18px 0 12px 25%;
+    justify-self: end;
+  }
+  .ReferenciasCont {
+    padding-top: 80px;
+  }
+  .Comentarios {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+  .tituloComForm {
+    font-size: 16px;
+  }
+  .textoComentSug {
+    width: 260px;
+    font-size: 12px;
+  }
+  .ContactoForm .fontHuge, .ContactoForm .tituloServContPri, .ContactoForm .ProLegal .tituloPro, .ProLegal .ContactoForm .tituloPro, .ContactoForm .QuieneSomos .tituloQuien, .QuieneSomos .ContactoForm .tituloQuien, .ContactoForm .NuestrosValores .tituloNV, .NuestrosValores .ContactoForm .tituloNV, .ContactoForm .tituloRef, .ContactoForm .TituloNE, .ContactoForm .persEquipo div .nombrePE, .persEquipo div .ContactoForm .nombrePE, .ContactoForm .tituloContForm {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .adminSect form .tit {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

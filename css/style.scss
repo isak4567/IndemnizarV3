@@ -629,6 +629,7 @@ footer {
 .ContactoForm {
     padding-top: 122px;
     margin: 0 0 122px 278px;
+    ul {list-style: initial;}
 }
 
 .tituloContForm {
@@ -721,8 +722,12 @@ footer {
 }
 
 // ||||############# Pagina - Comentarios #############|||||
+.ReferenciasCont {
+    padding-top: 120px;
+}
+
 .Comentarios {
-    padding-top: 140px;
+    padding-top: 20px;
     padding-bottom: 60px;
 }
 
@@ -797,6 +802,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
+        z-index: 2;
         background-color: $Color1;
         padding: 8% 2% 4% 2%;
         li {margin-left: 8px;}
@@ -1067,6 +1073,141 @@ footer {
         div ul li {
             font-size: 16px;
             margin-top: 12px;
+        }
+    }
+
+    // ||||############# Pagina - Nuestro Equipo #############|||||
+    .TituloNE {
+        font-size: 20px;
+        padding-top: 80px;
+        margin: 0 0 24px 8%;
+    }
+
+    .persEquipo  {
+        flex-direction: column;
+        width: 88%;
+        margin-bottom: 24px;
+        img {
+            width: 311px;
+            height: 220px;
+            margin: 0;
+        }
+        div {
+            .nombrePE {
+                font-size: 20px;
+                margin-top: 12px;
+                margin-bottom: 0;
+            }
+    
+            .especializacionPE {
+                font-size: 16px;
+                margin: 12px 0;
+                line-height: 24px;
+            }
+    
+            .descripcionPE {
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .especialNE .persEquipo {
+        padding: 24px 0;
+        .nombrePE {
+            margin-top: 18px;
+        }
+        .descripcionPE {
+            font-size: 12px;
+            margin: 2px 0;
+        }
+    }
+
+
+    // ||||############# Pagina - Email #############|||||
+    .ContactoForm {
+        padding-top: 80px;
+        margin: 0 auto;
+        width: 312px;
+    }
+
+    .tituloContForm {
+        font-size: 20px
+    }
+    
+    .descContForm {
+        font-size: 16px;
+        margin: 16px 0 24px 0;
+        line-height: 24px;
+    }
+
+    .formGroup {
+        flex-direction: column-reverse;
+        align-items: baseline;
+        label { 
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .textBar {
+            width: 100%;
+        }
+    }
+
+    .formGroupText {
+        flex-direction: column-reverse;
+        label {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+        div div {
+            display: flex;
+            ul {
+                font-size: 16px;
+                li {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+    }
+     
+    .inpContFormSubmit {
+        margin: 18px 0 12px 25%;
+        justify-self: end;
+    }
+
+    // ||||############# Pagina - Comentarios #############|||||
+    .ReferenciasCont {
+        padding-top: 80px;
+    }
+
+    .Comentarios {
+        padding-top: 20px;
+        padding-bottom: 24px;
+    }
+
+    .tituloComForm {
+        font-size: 16px;
+    }
+    
+    .textoComentSug {
+        width: 260px;
+        font-size: 12px;
+    }
+
+    .ContactoForm .fontHuge {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .adminSect {
+        form .tit {
+            font-size: 16px;
         }
     }
 }

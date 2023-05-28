@@ -5,6 +5,14 @@ import { FormAdmin, verActUser } from './admin.js';
 const comForm = document.querySelector('.ContactoForm');
 let formComNombre = comForm.querySelector('#formComNombre');
 let formComDesc = comForm.querySelector('#formComDesc');
+const malasPalabras = [
+        "puto","putazo",
+        "corrupto","culiao",
+        "pelotudo","boludo",
+        "imbecil","chupa",
+        "pija","ura",
+        "manga","puta"
+]
 
 comForm.addEventListener('submit', (e) => {
 
@@ -12,20 +20,49 @@ comForm.addEventListener('submit', (e) => {
         formComNombre = comForm.querySelector('#formComNombre').value;
         formComDesc = comForm.querySelector('#formComDesc').value;
         let noNum = formComNombre.replace(/[^0-9]+/g, "");
-         // true
+        let corrector = true;
+        let RefComents = document.querySelector('.Comentarios');
+        let nomCom = RefComents.querySelectorAll('.nombreRef');
+        let desCom = RefComents.querySelectorAll('.comRef');
 
-        if (formComNombre.toLowerCase() == "admin") {
-                FormAdmin();
+        for (let index = 0; index < nomCom.length; index++) {
+                if (formComNombre == nomCom[index].innerHTML || 
+                        formComDesc == desCom[index].innerHTML ) {
+                        corrector = false;
+                        alert("No se puede repetir comentarios");
+                }    
         }
-        else if (noNum.length > 0) {
-                alert("No se permite numeros en el nombre.");
+
+        if (corrector) {    
+                malasPalabras.forEach((elment)=> {
+                        if ( formComDesc.includes(elment) || formComNombre.includes(elment)) {
+                                alert("Por favor de mantener cierta decencia.");
+                                corrector = false;
+                        }
+                });
         }
-        else if (formComNombre.length < 4 || formComDesc.length < 12) {
-                alert("El nombre debe ser de al menos 4 caracteres y el comentario de 12 caracteres.");
-        }
-        else {
+
+        if (corrector) {        
+          if (formComNombre.toLowerCase() == "admin") {
+                  FormAdmin();
+          }
+           else if (noNum.length > 0) {
+                  alert("No se permite numeros en el nombre.");
+          }
+          else if (formComNombre.length < 4 || formComNombre.length > 29 || formComDesc.length < 12) {
+                  alert("El nombre debe ser de al menos 4 caracteres, un maximo de 30 y el comentario de 12 caracteres.");
+          }
+          else {
                 agregadorComentarios(formComNombre, formComDesc);
                 ArmadorComentarios();
+                Swal.fire({
+                        title: 'Comentario agregado exitosamente',
+                        color: '#0A6B76',
+                        background: 'white',
+                        icon: 'success',
+                        confirmButtonColor: 'green',
+                });
+          }
         }
 });
 

@@ -42,6 +42,21 @@ body {
   color: #FFFFFF;
 }
 
+.botonA, .inpContFormSubmit, .linkRef a, .QuieneSomos a, .cuadradroGrande .contContacto a, .cuadradroChico div a {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 9px 32px;
+  border: 3px dashed #FDE8D6;
+  border-radius: 8px;
+  color: #FDE8D6;
+  transition: 0.3s all;
+}
+.botonA:hover, .inpContFormSubmit:hover, .linkRef a:hover, .QuieneSomos a:hover, .cuadradroGrande .contContacto a:hover, .cuadradroChico div a:hover {
+  background-color: #FDE8D6;
+  color: #0A6B76;
+}
+
 .encabezado {
   width: 100%;
   position: absolute;
@@ -157,12 +172,16 @@ nav .navLi5 {
   margin-bottom: 24px;
 }
 .cuadradroChico .tituloCC {
+  margin: auto;
   margin-top: 24px;
   margin-bottom: 16px;
   font-size: 20px;
   font-weight: 700;
   color: #FDE8D6;
   text-align: center;
+}
+.cuadradroChico .tituloCC.cr2 {
+  width: 80%;
 }
 .cuadradroChico .textoCC {
   font-size: 16px;
@@ -185,15 +204,6 @@ nav .navLi5 {
 }
 .cuadradroChico div {
   text-align: center;
-}
-.cuadradroChico div a {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  padding: 9px 32px;
-  border: 3px dashed #FDE8D6;
-  border-radius: 8px;
-  color: #FDE8D6;
 }
 .cuadradroChico .sacM {
   margin-bottom: 12px;
@@ -231,16 +241,6 @@ nav .navLi5 {
   text-align: center;
   margin-top: 24px;
 }
-.cuadradroGrande .contContacto a {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  padding: 12px 24px;
-  border: 3px dashed #FDE8D6;
-  border-radius: 8px;
-  color: #FDE8D6;
-}
-
 .ProLegal {
   background-color: #FFFFFF;
   color: #0A6B76;
@@ -318,13 +318,7 @@ nav .navLi5 {
   margin-right: 48px;
 }
 .QuieneSomos a {
-  font-weight: 900;
-  font-size: 24px;
-  text-decoration: none;
-  color: #FDE8D6;
   padding: 16px 30px;
-  border: 3px dashed #FDE8D6;
-  border-radius: 8px;
 }
 
 .NuestrosValores {
@@ -406,12 +400,6 @@ nav .navLi5 {
 }
 .linkRef a {
   padding: 16px 32px;
-  border: 3px dashed #FDE8D6;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #FDE8D6;
-  font-weight: 900;
-  font-size: 24px;
 }
 
 footer {
@@ -588,12 +576,10 @@ footer {
 }
 
 .inpContFormSubmit {
-  margin-left: 389px;
+  margin-left: 339px;
   margin-top: 24px;
+  font-weight: 700;
   background-color: transparent;
-  color: #FDE8D6;
-  border: 3px dashed #FDE8D6;
-  border-radius: 8px;
   padding: 8px 16px;
 }
 
@@ -981,7 +967,7 @@ footer {
   }
   .inpContFormSubmit {
     margin: 18px 0 12px 25%;
-    justify-self: end;
+    font-size: 16px;
   }
   .ReferenciasCont {
     padding-top: 80px;

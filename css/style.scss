@@ -112,7 +112,11 @@ nav {
             align-items: center;
             text-align: center;
             color: $Color3;
-
+            transition: 0.3s all;
+            &:hover {
+                color: $Color3;
+                text-decoration: underline;
+            }
             img {
                 width: 24px;
                 height: 24px;
@@ -470,6 +474,7 @@ nav {
 
 .referencia {
     max-width: 740px;
+    width: 100%;
     margin: 0;
     margin-bottom: 12px;
     padding: 12px 16px;
@@ -1212,9 +1217,7 @@ footer {
 @media only screen and (min-width: 540px) and (max-width: 960px) {
 
     // ########## Header ##########
-    .encabezado {
-        height: 48px;
-    }
+    .encabezado { height: 52px;}
 
     // ########## Sect Servicios ##########
     .frase1 {
@@ -1224,15 +1227,12 @@ footer {
             font-size: 20px;
         }
     }
-
     .tituloServContPri {
         width: 76%;
         font-size: 24px;
     }
-
     .serviciosCont {
         gap: 20px 0px;
-
         .cuadradroChico {
             width: 424px;
 
@@ -1257,7 +1257,6 @@ footer {
             }
         }
     }
-
     .cuadradroGrande {
         width: 424px;
         h3 {
@@ -1269,19 +1268,13 @@ footer {
             font-size: 16px;
             min-width: 380px;
         }
-        .contContacto a {
-            font-size: 20px;
-        }
+        .contContacto a {font-size: 20px;}
     }
 
     // ############# Section - Proceso Legal #############
     .ProLegal {
-        .contProLegal {
-            width: 424px;
-        }
-        .tituloPro {
-            font-size: 24px;
-        }
+        .contProLegal {width: 424px;}
+        .tituloPro {font-size: 24px;}
         .desPro {
             font-size: 20px;
             margin-bottom: 20px;
@@ -1317,20 +1310,15 @@ footer {
 
     // ############# Section - Nuestros Valores #############
     .NuestrosValores {
-        .tituloNV {
-            font-size: 24px;
-        }
+        .tituloNV {font-size: 24px;}
         .d-flex {
             gap: 20px;
             width: 428px;
         }
     }
-
     .valores {
         width: 360px;
-        h3 {
-            font-size: 20px;
-        }
+        h3 {font-size: 20px;}
         .contValores  {
             width: 360px;
             height: 360px;
@@ -1368,14 +1356,10 @@ footer {
             margin-top: 16px;
         }
     }
-    .linksSociales div {
-        margin-right: 20px;
-    }
+    .linksSociales div {margin-right: 20px;}
 
     // ||||############# Pagina - Nuestro Equipo #############|||||
-    .TituloNE {
-        font-size: 24px;
-    }
+    .TituloNE, .persEquipo div .nombrePE {font-size: 24px;}
     .persEquipo  {
         width: 80%;
         margin-bottom: 28px;
@@ -1384,15 +1368,11 @@ footer {
             height: 320px;
         }
         div {
-            .nombrePE {
-                font-size: 24px;
-                margin-top: 12px;
-            }
+            .nombrePE {margin-top: 12px;}
             .especializacionPE {font-size: 20px;}
             .descripcionPE {font-size: 16px;}
         }
     }
-
     .especialNE .persEquipo {
         .nombrePE {margin-top: 22px;}
         .descripcionPE {
@@ -1405,12 +1385,9 @@ footer {
     .ContactoForm {
         padding-top: 80px;
         width: 412px;
-        .tituloContForm {
-            font-size: 24px !important;
-        }
+        .tituloContForm {font-size: 24px !important;}
     }
-    .descContForm,
-    .formGroup label {font-size: 20px;}
+    .descContForm, .formGroup label {font-size: 20px;}
     .formGroupText {
         label {font-size: 20px;}
         textarea {

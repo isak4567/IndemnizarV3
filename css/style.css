@@ -92,6 +92,11 @@ nav ul li a {
   align-items: center;
   text-align: center;
   color: #FDE8D6;
+  transition: 0.3s all;
+}
+nav ul li a:hover {
+  color: #FDE8D6;
+  text-decoration: underline;
 }
 nav ul li a img {
   width: 24px;
@@ -388,6 +393,7 @@ nav .navLi5 {
 
 .referencia {
   max-width: 740px;
+  width: 100%;
   margin: 0;
   margin-bottom: 12px;
   padding: 12px 16px;
@@ -999,7 +1005,7 @@ footer {
 }
 @media only screen and (min-width: 540px) and (max-width: 960px) {
   .encabezado {
-    height: 48px;
+    height: 52px;
   }
   .frase1 {
     width: 400px;
@@ -1140,7 +1146,7 @@ footer {
   .linksSociales div {
     margin-right: 20px;
   }
-  .TituloNE {
+  .TituloNE, .persEquipo div .nombrePE {
     font-size: 24px;
   }
   .persEquipo {
@@ -1152,7 +1158,6 @@ footer {
     height: 320px;
   }
   .persEquipo div .nombrePE {
-    font-size: 24px;
     margin-top: 12px;
   }
   .persEquipo div .especializacionPE {
@@ -1175,8 +1180,7 @@ footer {
   .ContactoForm .tituloContForm {
     font-size: 24px !important;
   }
-  .descContForm,
-  .formGroup label {
+  .descContForm, .formGroup label {
     font-size: 20px;
   }
   .formGroupText label {

@@ -94,7 +94,6 @@ async function ArmadorComentarios() {
                 });
                 const borrarCom = RefCom.querySelectorAll(".borrarComent");
                 borrarCom.forEach((el)=> el.addEventListener("click", BorrarComent));
-
         } else {
                 querySnapshot.forEach((doc) => {
                         RefCom.innerHTML += `<div class="referencia">
@@ -104,7 +103,6 @@ async function ArmadorComentarios() {
                 });
         }
 }
-
 
 function BorrarComent(e) {
         Swal.fire({

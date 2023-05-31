@@ -22,26 +22,7 @@ const firebaseConfig = {
       
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
+// Base de Datos;
 export const db = getFirestore(app);
 // Auth
 export const auth = getAuth(app);
-
-/*
-user: pepe@yy.com
-contraseña: 121314
-
-const auth = getAuth();
-signInWithCustomToken(auth, token)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ...
-  });
-
-  */

@@ -509,6 +509,12 @@ footer {
 .ContactoForm ul {
   list-style: initial;
 }
+.ContactoForm input[type=text]:valid, .ContactoForm input[type=tel]:valid, .ContactoForm input[type=email]:valid {
+  background-color: palegreen;
+}
+.ContactoForm input[type=text]:invalid, .ContactoForm input[type=tel]:invalid, .ContactoForm input[type=email]:invalid {
+  background-color: lightpink;
+}
 
 .tituloContForm {
   color: #FDE8D6;
@@ -986,6 +992,216 @@ footer {
   .ContactoForm .fontHuge, .ContactoForm .tituloServContPri, .ContactoForm .ProLegal .tituloPro, .ProLegal .ContactoForm .tituloPro, .ContactoForm .QuieneSomos .tituloQuien, .QuieneSomos .ContactoForm .tituloQuien, .ContactoForm .NuestrosValores .tituloNV, .NuestrosValores .ContactoForm .tituloNV, .ContactoForm .tituloRef, .ContactoForm .TituloNE, .ContactoForm .persEquipo div .nombrePE, .persEquipo div .ContactoForm .nombrePE, .ContactoForm .tituloContForm {
     font-size: 16px;
     line-height: 24px;
+  }
+  .adminSect form .tit {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 960px) {
+  .encabezado {
+    height: 48px;
+  }
+  .frase1 {
+    width: 400px;
+    font-size: 16px;
+  }
+  .frase1 span {
+    font-size: 20px;
+  }
+  .tituloServContPri {
+    width: 76%;
+    font-size: 24px;
+  }
+  .serviciosCont {
+    gap: 20px 0px;
+  }
+  .serviciosCont .cuadradroChico {
+    width: 424px;
+  }
+  .serviciosCont .cuadradroChico .tituloCC, .serviciosCont .cuadradroChico .tituloCC.cr2, .serviciosCont .cuadradroChico .precio2CC, .serviciosCont .cuadradroChico div a, .serviciosCont .cuadradroChico .precioCC {
+    font-size: 20px;
+  }
+  .serviciosCont .cuadradroChico .textoCC {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .serviciosCont .cuadradroChico .precioCC {
+    padding: 8px 24px;
+  }
+  .serviciosCont .cuadradroChico .precioCC span {
+    font-size: 24px;
+  }
+  .serviciosCont .cuadradroChico .sacM {
+    margin-bottom: 12px;
+  }
+  .cuadradroGrande {
+    width: 424px;
+  }
+  .cuadradroGrande h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .cuadradroGrande ul div li {
+    margin-left: 16px;
+    font-size: 16px;
+    min-width: 380px;
+  }
+  .cuadradroGrande .contContacto a {
+    font-size: 20px;
+  }
+  .ProLegal .contProLegal {
+    width: 424px;
+  }
+  .ProLegal .tituloPro {
+    font-size: 24px;
+  }
+  .ProLegal .desPro {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .ProLegal .imgPro {
+    background-size: contain;
+    min-width: 174px;
+    height: 688px;
+  }
+  .pasosProceso {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .pasosProceso p {
+    margin: 10px 0 0 0;
+    padding: 12px;
+  }
+  .QuieneSomos {
+    width: 468px;
+  }
+  .QuieneSomos p {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .QuieneSomos .tituloQuien {
+    font-size: 24px;
+  }
+  .QuieneSomos .d-flex {
+    flex-direction: row;
+  }
+  .QuieneSomos .d-flex a {
+    font-size: 24px;
+  }
+  .NuestrosValores .tituloNV {
+    font-size: 24px;
+  }
+  .NuestrosValores .d-flex {
+    gap: 20px;
+    width: 428px;
+  }
+  .valores {
+    width: 360px;
+  }
+  .valores h3 {
+    font-size: 20px;
+  }
+  .valores .contValores {
+    width: 360px;
+    height: 360px;
+  }
+  .valores .textoV {
+    width: 360px;
+    font-size: 16px;
+    margin-top: -160px;
+  }
+  .tituloRef {
+    font-size: 24px;
+  }
+  .referencia .nombreRef {
+    font-size: 20px;
+  }
+  .referencia .comRef {
+    font-size: 16px;
+  }
+  .linkRef a {
+    font-size: 20px;
+  }
+  .barra {
+    width: 80%;
+    margin-bottom: 38px;
+  }
+  .linksSociales {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .linksSociales div .TipContacto {
+    font-size: 24px;
+  }
+  .linksSociales div ul li {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .linksSociales div {
+    margin-right: 20px;
+  }
+  .TituloNE {
+    font-size: 24px;
+  }
+  .persEquipo {
+    width: 80%;
+    margin-bottom: 28px;
+  }
+  .persEquipo img {
+    width: 461px;
+    height: 320px;
+  }
+  .persEquipo div .nombrePE {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+  .persEquipo div .especializacionPE {
+    font-size: 20px;
+  }
+  .persEquipo div .descripcionPE {
+    font-size: 16px;
+  }
+  .especialNE .persEquipo .nombrePE {
+    margin-top: 22px;
+  }
+  .especialNE .persEquipo .descripcionPE {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+  .ContactoForm {
+    padding-top: 80px;
+    width: 412px;
+  }
+  .ContactoForm .tituloContForm {
+    font-size: 24px !important;
+  }
+  .descContForm,
+  .formGroup label {
+    font-size: 20px;
+  }
+  .formGroupText label {
+    font-size: 20px;
+  }
+  .formGroupText textarea {
+    width: 100%;
+    height: 300px;
+  }
+  .formGroupText div div ul {
+    font-size: 20px;
+  }
+  .formGroupText div div ul li {
+    font-size: 14px;
+  }
+  .inpContFormSubmit {
+    margin: 18px 0 12px 27.5%;
+    font-size: 20px;
+  }
+  .tituloComForm, .ContactoForm .fontHuge, .ContactoForm .tituloServContPri, .ContactoForm .ProLegal .tituloPro, .ProLegal .ContactoForm .tituloPro, .ContactoForm .QuieneSomos .tituloQuien, .QuieneSomos .ContactoForm .tituloQuien, .ContactoForm .NuestrosValores .tituloNV, .NuestrosValores .ContactoForm .tituloNV, .ContactoForm .tituloRef, .ContactoForm .TituloNE, .ContactoForm .persEquipo div .nombrePE, .persEquipo div .ContactoForm .nombrePE, .ContactoForm .tituloContForm {
+    font-size: 20px;
+  }
+  .textoComentSug {
+    width: 360px;
+    font-size: 16px;
   }
   .adminSect form .tit {
     font-size: 16px;

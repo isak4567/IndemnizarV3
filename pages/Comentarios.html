@@ -78,13 +78,13 @@
             <div class="formGroup" >
                 <div class="textBar">
                     <img src="../multimedia/img/GrUser2.png" alt="">
-                    <input id="formComNombre" type="text" name="nombre-completo" required>
+                    <input id="formComNombre" type="text" name="nombre-completo" placeholder="Ej: Nombre Apellido" title="minimo 4 caracteres, maximo 40" pattern="[A-Za-z\s]{4,30}" required>
                 </div>
                 <label for="nombre-completo">Nombre Completo</label>
             </div>
 
             <div class="formGroupText d-flex">
-                <textarea id="formComDesc" name="caso" id="caso" required></textarea>
+                <textarea id="formComDesc"  maxlength="2000" minlength="12" name="caso" id="caso" required></textarea>
                 <div>
                     <p class="textoComentSug">Valoramos seriamente cualquier critica que puedas tener en base a nuestros servicios.</p>
                 </div>

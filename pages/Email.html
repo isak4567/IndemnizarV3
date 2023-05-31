@@ -66,7 +66,7 @@
             <div class="formGroup">
                 <div class="textBar">
                     <img src="../multimedia/img/GrUser2.png" alt="">
-                    <input type="text" name="nombre-completo" required>
+                    <input type="text" name="nombre-completo" placeholder="Ej: Nombre Apellido" title="minimo 4 caracteres, maximo 40" pattern="[A-Za-z\s]{4,40}" required>
                 </div>
                 <label for="nombre-completo">Nombre Completo</label>
             </div>
@@ -74,7 +74,7 @@
             <div class="formGroup">
                 <div class="textBar">
                     <img src="../multimedia/img/GrLocation2.png" alt="">
-                    <input type="text" name="Ciudad" required>
+                    <input type="text" name="Ciudad" placeholder="Ej: Ciudad, Provincia" title="minimo 4 caracteres, maximo 80" pattern="[A-Za-z\s]{4,80}" required>
                 </div>
                 <label for="Ciudad">Ciudad / Provincia</label>
             </div>
@@ -82,7 +82,7 @@
             <div class="formGroup">
                 <div class="textBar">
                     <img src="../multimedia/img/GrPhone2.png" alt="">
-                    <input type="text" name="numero-telefonico" required>
+                    <input type="tel" name="numero-telefonico" placeholder="Ej: 381*******" pattern="([0-9\s]){10,20}" title="Escriba como minimo 10 numeros" required>
                 </div>
                 <label for="numero-telefonico">Numero Telefonico</label>
             </div>
@@ -90,13 +90,13 @@
             <div class="formGroup">
                 <div class="textBar">
                     <img src="../multimedia/img/GrMailOption2.png" alt="">
-                    <input type="email" name="tu-mail" required>
+                    <input type="email" name="tu-mail" placeholder="Ej: algo@****.com" required>
                 </div>
                 <label for="tu-mail">Tu Mail</label>
             </div>
 
             <div class="formGroupText d-flex">
-                <textarea name="caso" id="caso"></textarea>
+                <textarea name="caso" maxlength="3000" minlength="12" id="caso" required></textarea>
                 <div>
                     <label for="caso">Cuentanos Sobre Tu Caso</label>
                     <div>
@@ -115,7 +115,20 @@
             </div>
 
             <input class="inpContFormSubmit" type="submit" value="Enviar Mensaje">
-            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/Email.html">
+            <input type="hidden" name="_autoresponse" value="your custom message">
+            <input type="hidden" name="_blacklist" value="puto, 
+            putazo, 
+            corrupto, 
+            culiao, 
+            pelotudo, 
+            boludo, 
+            imbecil, 
+            chupa, 
+            pija, 
+            ura, 
+            manga, 
+            puta">
         </form>
 
     </main>
